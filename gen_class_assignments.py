@@ -11,8 +11,8 @@ plt.style.use('/Users/wmd122/github/wedap/styles/default.mplstyle')
 
 class Gen_Class_Assignments:
 
-    def __init__(self, c1_bounds=28, c2_bounds=16.5, c1_label="open", c2_label="closed",
-                 coord_data_file="pcoord.dat",
+    def __init__(self, c1_bounds=60, c2_bounds=35, c1_label="closed", c2_label="open",
+                 coord_data_file="200-600ns_pc.dat",
                  out_filename="class_assignments.txt"):
         """
         Parameters
@@ -34,7 +34,7 @@ class Gen_Class_Assignments:
         # import the rmsd and o_angle data files, only the data col not frames
         # TODO: eventually could make arg for multiple files and indices
         self.coord1 = np.loadtxt(coord_data_file)[:,1]
-        self.coord2 = np.loadtxt(coord_data_file)[:,2]
+        self.coord2 = np.loadtxt(coord_data_file)[:,0]
 
         self.c1_bounds = c1_bounds
         self.c2_bounds = c2_bounds
@@ -78,11 +78,16 @@ class Gen_Class_Assignments:
         # set the default label to "neither"
         labels["label"] = "neither"
 
-        # assign major and minor labels from element wise conditions
-        labels[(self.coord1 >= self.c1_bounds) & (self.coord2 >= self.c1_bounds)] \
+        # assign labels from element wise conditions
+        # labels[(self.coord1 < self.c1_bounds) & (self.coord2 < self.c2_bounds)] \
+        #     = self.c1_label
+        # labels[(self.coord1 > self.c1_bounds) & (self.coord2 > self.c2_bounds)] \
+        #     = self.c2_label
+
+        # the above excludes the sides of the dist, here lets do a full binary classification
+        labels["label"] = self.c2_label # all to open and then label closed only
+        labels[(self.coord1 < self.c1_bounds) & (self.coord2 < self.c2_bounds)] \
             = self.c1_label
-        labels[(self.coord1 <= self.c2_bounds) & (self.coord2 <= self.c2_bounds)] \
-            = self.c2_label
 
         # save the labeled class assignments structured array
         if save:
@@ -94,12 +99,16 @@ class Gen_Class_Assignments:
     def state_assign_plot(self):
         # make a plot of the class assignments
         # Map text labels to numerical values
-        label_mapping = {self.c1_label: 0, 'neither': 1, self.c2_label: 2}
+        #label_mapping = {self.c1_label: 0, 'neither': 1, self.c2_label: 2}
+        label_mapping = {self.c1_label: 0, self.c2_label: 2}
         numerical_labels = np.array([label_mapping[label] for label in self.labels['label']])
 
         # Create a colormap
-        colors = ['#DEE11E', '#1EDEE1', '#E11EDE']
-        colors = ['#1594EA', '#989C96', '#EA6B15']
+        # colors = ['#DEE11E', '#1EDEE1', '#E11EDE']
+        # colors = ['#1594EA', '#989C96', '#EA6B15']
+        # colors = ['#DEE11E', '#E11EDE']
+        # colors = ['#1594EA', '#EA6B15']
+        colors = ['#1f77b4', '#ff7f0e']
         cmap = ListedColormap(colors)
 
         # Scatter plot
@@ -107,7 +116,8 @@ class Gen_Class_Assignments:
 
         # Add colorbar
         cbar = plt.colorbar()
-        cbar.set_ticks([0, 1, 2])  # Adjust ticks according to your labels
+        #cbar.set_ticks([0, 1, 2])  # Adjust ticks according to your labels
+        cbar.set_ticks([0.5, 1.5])  # Adjust ticks according to your labels
         cbar.set_ticklabels(list(label_mapping.keys()))
 
         # add state label lines
@@ -118,19 +128,22 @@ class Gen_Class_Assignments:
         #plt.axvline(x=1.7, ymin=(16/34), linestyle='--', color='k')
         #plt.axvline(x=3.7, ymax=(9/34), linestyle='--', color='k')
 
-        lines = [self.c1_bounds, self.c2_bounds]
-        [plt.axhline(y=i, linestyle='--', color='k') for i in lines]
-        [plt.axvline(x=i, linestyle='--', color='k') for i in lines]
+        # lines = [self.c1_bounds, self.c2_bounds]
+        # [plt.axhline(y=i, linestyle='--', color='k') for i in lines]
+        # [plt.axvline(x=i, linestyle='--', color='k') for i in lines]
+        plt.axhline(y=self.c2_bounds, linestyle='--', color='k')
+        plt.axvline(x=self.c1_bounds, linestyle='--', color='k')
+
 
         # formatting
-        #plt.xlim(0, 51)
-        #plt.ylim(0, 51)
-        #plt.xlabel("Orientation Angle 1 (°)")
-        #plt.ylabel("Orientation Angle 2 (°)")
+        plt.xlim(30, 90)
+        plt.ylim(20, 55)
+        plt.xlabel("Opening Angle (°)")
+        plt.ylabel("Cu(II)-Cu(II) Distance ($\AA$)")
         #plt.title("CA-CTD State Labels")
 
         plt.tight_layout()
-        #plt.savefig("state_labels.pdf")
+        plt.savefig("state_labels.pdf")
         plt.show()
 
 if __name__ == "__main__":
