@@ -1,81 +1,56 @@
 parm ../1lst.prmtop 
- trajin ../v01_100_197/md01.nc 1 last 10
  trajin ../v01_100_197/md02.nc 1 last 10
  trajin ../v01_100_197/md03.nc 1 last 10
- trajin ../v01_100_192/md01.nc 1 last 10
  trajin ../v01_100_192/md02.nc 1 last 10
  trajin ../v01_100_192/md03.nc 1 last 10
- trajin ../v01_100_193/md01.nc 1 last 10
  trajin ../v01_100_193/md02.nc 1 last 10
  trajin ../v01_100_193/md03.nc 1 last 10
- trajin ../v01_100_254/md01.nc 1 last 10
  trajin ../v01_100_254/md02.nc 1 last 10
  trajin ../v01_100_254/md03.nc 1 last 10
- trajin ../v01_100_144/md01.nc 1 last 10
  trajin ../v01_100_144/md02.nc 1 last 10
  trajin ../v01_100_144/md03.nc 1 last 10
- trajin ../v02_100_136/md01.nc 1 last 10
  trajin ../v02_100_136/md02.nc 1 last 10
  trajin ../v02_100_136/md03.nc 1 last 10
- trajin ../v02_100_229/md01.nc 1 last 10
  trajin ../v02_100_229/md02.nc 1 last 10
  trajin ../v02_100_229/md03.nc 1 last 10
- trajin ../v02_100_184/md01.nc 1 last 10
  trajin ../v02_100_184/md02.nc 1 last 10
  trajin ../v02_100_184/md03.nc 1 last 10
- trajin ../v02_100_137/md01.nc 1 last 10
  trajin ../v02_100_137/md02.nc 1 last 10
  trajin ../v02_100_137/md03.nc 1 last 10
- trajin ../v02_100_274/md01.nc 1 last 10
  trajin ../v02_100_274/md02.nc 1 last 10
  trajin ../v02_100_274/md03.nc 1 last 10
- trajin ../v03_198_57/md01.nc 1 last 10
  trajin ../v03_198_57/md02.nc 1 last 10
  trajin ../v03_198_57/md03.nc 1 last 10
- trajin ../v03_198_81/md01.nc 1 last 10
  trajin ../v03_198_81/md02.nc 1 last 10
  trajin ../v03_198_81/md03.nc 1 last 10
- trajin ../v03_200_95/md01.nc 1 last 10
  trajin ../v03_200_95/md02.nc 1 last 10
  trajin ../v03_200_95/md03.nc 1 last 10
- trajin ../v03_200_92/md01.nc 1 last 10
  trajin ../v03_200_92/md02.nc 1 last 10
  trajin ../v03_200_92/md03.nc 1 last 10
- trajin ../v03_200_50/md01.nc 1 last 10
  trajin ../v03_200_50/md02.nc 1 last 10
  trajin ../v03_200_50/md03.nc 1 last 10
- trajin ../v04_200_121/md01.nc 1 last 10
  trajin ../v04_200_121/md02.nc 1 last 10
  trajin ../v04_200_121/md03.nc 1 last 10
- trajin ../v04_200_118/md01.nc 1 last 10
  trajin ../v04_200_118/md02.nc 1 last 10
  trajin ../v04_200_118/md03.nc 1 last 10
- trajin ../v04_200_72/md01.nc 1 last 10
  trajin ../v04_200_72/md02.nc 1 last 10
  trajin ../v04_200_72/md03.nc 1 last 10
- trajin ../v04_200_52/md01.nc 1 last 10
  trajin ../v04_200_52/md02.nc 1 last 10
  trajin ../v04_200_52/md03.nc 1 last 10
- trajin ../v04_200_123/md01.nc 1 last 10
  trajin ../v04_200_123/md02.nc 1 last 10
  trajin ../v04_200_123/md03.nc 1 last 10
- trajin ../v05_200_40/md01.nc 1 last 10
  trajin ../v05_200_40/md02.nc 1 last 10
  trajin ../v05_200_40/md03.nc 1 last 10
- trajin ../v05_200_81/md01.nc 1 last 10
  trajin ../v05_200_81/md02.nc 1 last 10
  trajin ../v05_200_81/md03.nc 1 last 10
- trajin ../v05_200_41/md01.nc 1 last 10
  trajin ../v05_200_41/md02.nc 1 last 10
  trajin ../v05_200_41/md03.nc 1 last 10
- trajin ../v05_200_82/md01.nc 1 last 10
  trajin ../v05_200_82/md02.nc 1 last 10
  trajin ../v05_200_82/md03.nc 1 last 10
- trajin ../v05_200_87/md01.nc 1 last 10
  trajin ../v05_200_87/md02.nc 1 last 10
  trajin ../v05_200_87/md03.nc 1 last 10
  autoimage 
  strip :WAT,Na+,Cl- parmout 1lst_dry.prmtop 
- trajout all_trajs_dry_imaged_10i.nc 
+ trajout 200-600ns_dry_imaged_10i.nc 
  run 
 

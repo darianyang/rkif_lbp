@@ -1,0 +1,327 @@
+
+CPPTRAJ: Trajectory Analysis. V6.24.0 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 06/26/25 06:43:58
+| Available memory: 1.461 TB
+
+INPUT: Reading input from 'cpp.in'
+  [parm ../1lst.prmtop]
+	Reading '../1lst.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin ../v01_100_197/md02.nc 1 last 10]
+	Reading '../v01_100_197/md02.nc' as Amber NetCDF
+  [trajin ../v01_100_197/md03.nc 1 last 10]
+	Reading '../v01_100_197/md03.nc' as Amber NetCDF
+  [trajin ../v01_100_192/md02.nc 1 last 10]
+	Reading '../v01_100_192/md02.nc' as Amber NetCDF
+  [trajin ../v01_100_192/md03.nc 1 last 10]
+	Reading '../v01_100_192/md03.nc' as Amber NetCDF
+  [trajin ../v01_100_193/md02.nc 1 last 10]
+	Reading '../v01_100_193/md02.nc' as Amber NetCDF
+  [trajin ../v01_100_193/md03.nc 1 last 10]
+	Reading '../v01_100_193/md03.nc' as Amber NetCDF
+  [trajin ../v01_100_254/md02.nc 1 last 10]
+	Reading '../v01_100_254/md02.nc' as Amber NetCDF
+  [trajin ../v01_100_254/md03.nc 1 last 10]
+	Reading '../v01_100_254/md03.nc' as Amber NetCDF
+  [trajin ../v01_100_144/md02.nc 1 last 10]
+	Reading '../v01_100_144/md02.nc' as Amber NetCDF
+  [trajin ../v01_100_144/md03.nc 1 last 10]
+	Reading '../v01_100_144/md03.nc' as Amber NetCDF
+  [trajin ../v02_100_136/md02.nc 1 last 10]
+	Reading '../v02_100_136/md02.nc' as Amber NetCDF
+  [trajin ../v02_100_136/md03.nc 1 last 10]
+	Reading '../v02_100_136/md03.nc' as Amber NetCDF
+  [trajin ../v02_100_229/md02.nc 1 last 10]
+	Reading '../v02_100_229/md02.nc' as Amber NetCDF
+  [trajin ../v02_100_229/md03.nc 1 last 10]
+	Reading '../v02_100_229/md03.nc' as Amber NetCDF
+  [trajin ../v02_100_184/md02.nc 1 last 10]
+	Reading '../v02_100_184/md02.nc' as Amber NetCDF
+  [trajin ../v02_100_184/md03.nc 1 last 10]
+	Reading '../v02_100_184/md03.nc' as Amber NetCDF
+  [trajin ../v02_100_137/md02.nc 1 last 10]
+	Reading '../v02_100_137/md02.nc' as Amber NetCDF
+  [trajin ../v02_100_137/md03.nc 1 last 10]
+	Reading '../v02_100_137/md03.nc' as Amber NetCDF
+  [trajin ../v02_100_274/md02.nc 1 last 10]
+	Reading '../v02_100_274/md02.nc' as Amber NetCDF
+  [trajin ../v02_100_274/md03.nc 1 last 10]
+	Reading '../v02_100_274/md03.nc' as Amber NetCDF
+  [trajin ../v03_198_57/md02.nc 1 last 10]
+	Reading '../v03_198_57/md02.nc' as Amber NetCDF
+  [trajin ../v03_198_57/md03.nc 1 last 10]
+	Reading '../v03_198_57/md03.nc' as Amber NetCDF
+  [trajin ../v03_198_81/md02.nc 1 last 10]
+	Reading '../v03_198_81/md02.nc' as Amber NetCDF
+  [trajin ../v03_198_81/md03.nc 1 last 10]
+	Reading '../v03_198_81/md03.nc' as Amber NetCDF
+  [trajin ../v03_200_95/md02.nc 1 last 10]
+	Reading '../v03_200_95/md02.nc' as Amber NetCDF
+  [trajin ../v03_200_95/md03.nc 1 last 10]
+	Reading '../v03_200_95/md03.nc' as Amber NetCDF
+  [trajin ../v03_200_92/md02.nc 1 last 10]
+	Reading '../v03_200_92/md02.nc' as Amber NetCDF
+  [trajin ../v03_200_92/md03.nc 1 last 10]
+	Reading '../v03_200_92/md03.nc' as Amber NetCDF
+  [trajin ../v03_200_50/md02.nc 1 last 10]
+	Reading '../v03_200_50/md02.nc' as Amber NetCDF
+  [trajin ../v03_200_50/md03.nc 1 last 10]
+	Reading '../v03_200_50/md03.nc' as Amber NetCDF
+  [trajin ../v04_200_121/md02.nc 1 last 10]
+	Reading '../v04_200_121/md02.nc' as Amber NetCDF
+  [trajin ../v04_200_121/md03.nc 1 last 10]
+	Reading '../v04_200_121/md03.nc' as Amber NetCDF
+  [trajin ../v04_200_118/md02.nc 1 last 10]
+	Reading '../v04_200_118/md02.nc' as Amber NetCDF
+  [trajin ../v04_200_118/md03.nc 1 last 10]
+	Reading '../v04_200_118/md03.nc' as Amber NetCDF
+  [trajin ../v04_200_72/md02.nc 1 last 10]
+	Reading '../v04_200_72/md02.nc' as Amber NetCDF
+  [trajin ../v04_200_72/md03.nc 1 last 10]
+	Reading '../v04_200_72/md03.nc' as Amber NetCDF
+  [trajin ../v04_200_52/md02.nc 1 last 10]
+	Reading '../v04_200_52/md02.nc' as Amber NetCDF
+  [trajin ../v04_200_52/md03.nc 1 last 10]
+	Reading '../v04_200_52/md03.nc' as Amber NetCDF
+  [trajin ../v04_200_123/md02.nc 1 last 10]
+	Reading '../v04_200_123/md02.nc' as Amber NetCDF
+  [trajin ../v04_200_123/md03.nc 1 last 10]
+	Reading '../v04_200_123/md03.nc' as Amber NetCDF
+  [trajin ../v05_200_40/md02.nc 1 last 10]
+	Reading '../v05_200_40/md02.nc' as Amber NetCDF
+  [trajin ../v05_200_40/md03.nc 1 last 10]
+	Reading '../v05_200_40/md03.nc' as Amber NetCDF
+  [trajin ../v05_200_81/md02.nc 1 last 10]
+	Reading '../v05_200_81/md02.nc' as Amber NetCDF
+  [trajin ../v05_200_81/md03.nc 1 last 10]
+	Reading '../v05_200_81/md03.nc' as Amber NetCDF
+  [trajin ../v05_200_41/md02.nc 1 last 10]
+	Reading '../v05_200_41/md02.nc' as Amber NetCDF
+  [trajin ../v05_200_41/md03.nc 1 last 10]
+	Reading '../v05_200_41/md03.nc' as Amber NetCDF
+  [trajin ../v05_200_82/md02.nc 1 last 10]
+	Reading '../v05_200_82/md02.nc' as Amber NetCDF
+  [trajin ../v05_200_82/md03.nc 1 last 10]
+	Reading '../v05_200_82/md03.nc' as Amber NetCDF
+  [trajin ../v05_200_87/md02.nc 1 last 10]
+	Reading '../v05_200_87/md02.nc' as Amber NetCDF
+  [trajin ../v05_200_87/md03.nc 1 last 10]
+	Reading '../v05_200_87/md03.nc' as Amber NetCDF
+  [autoimage]
+    AUTOIMAGE: To box center based on center of mass, anchor is first molecule.
+  [strip :WAT,Na+,Cl- parmout 1lst_dry.prmtop]
+    STRIP: Stripping atoms in mask [:WAT,Na+,Cl-]
+	Writing 'stripped' topology file with name '1lst_dry.prmtop'
+  [trajout 200-600ns_dry_imaged_10i.nc]
+	Writing '200-600ns_dry_imaged_10i.nc' as Amber NetCDF
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 1lst.prmtop, 54148 atoms, 12857 res, box: Truncated octahedron, 12618 mol, 12612 solvent
+
+INPUT TRAJECTORIES (50 total):
+ 0: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 1: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 2: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 3: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 4: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 5: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 6: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 7: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 8: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 9: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 10: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 11: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 12: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 13: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 14: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 15: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 16: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 17: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 18: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 19: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 20: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 21: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 22: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 23: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 24: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 25: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 26: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 27: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 28: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 29: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 30: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 31: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 32: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 33: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 34: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 35: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 36: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 37: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 38: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 39: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 40: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 41: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 42: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 43: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 44: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 45: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 46: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 47: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 48: 'md02.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+ 49: 'md03.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm 1lst.prmtop (Truncated octahedron box) (reading 2000 of 20000)
+  Coordinate processing will occur on 100000 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  '200-600ns_dry_imaged_10i.nc' (100000 frames) is a NetCDF (NetCDF3) AMBER trajectory
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '1lst.prmtop' (2 actions):
+  0: [autoimage]
+	Original box is truncated octahedron, turning on 'familiar'.
+	Using first molecule as anchor.
+	12617 molecules are mobile.
+  1: [strip :WAT,Na+,Cl- parmout 1lst_dry.prmtop]
+	Stripping 50453 atoms.
+	Stripped topology: 3695 atoms, 240 res, box: Truncated octahedron, 1 mol
+	Writing topology 0 (1lst.prmtop) to '1lst_dry.prmtop' with format Amber Topology
+	Memory used by full exclusion list: 81.284 kB
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+Warning: Setting NetCDF variable compression requires compiling with HDF5 support.
+Warning: Setting NetCDF frame chunk size requires compiling with HDF5 support.
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  200-600ns_dry_imaged_10i.nc (coordinates, time, box)
+----- md02.nc (1-20000, 10) -----
+ 0% 
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+10% 
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+20% 
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+30% 
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+40% 
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+50% 
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+60% 
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+70% 
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+80% 
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+90% 
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+
+----- md02.nc (1-20000, 10) -----
+
+----- md03.nc (1-20000, 10) -----
+100% Complete.
+
+Read 100000 frames and processed 100000 frames.
+TIME: Avg. throughput= 41.2779 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0001 s (  0.00%)
+TIME:		Trajectory Process : 2422.6034 s (100.00%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0590 s (  0.00%)
+TIME:		Other              : 0.0043 s (  0.00%)
+TIME:	Run Total 2422.6668 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 2423.4658 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

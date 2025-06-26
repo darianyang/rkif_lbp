@@ -12,7 +12,7 @@ for name in $names; do
     echo "$name"
     #cd ../$name
 
-   CMD="$CMD trajin ../${name}/md01.nc 1 last 10\n"
+   #CMD="$CMD trajin ../${name}/md01.nc 1 last 10\n"
    CMD="$CMD trajin ../${name}/md02.nc 1 last 10\n"
    CMD="$CMD trajin ../${name}/md03.nc 1 last 10\n"
 
@@ -25,7 +25,7 @@ done
 # finish the cpp script
 CMD="$CMD autoimage \n"
 CMD="$CMD strip :WAT,Na+,Cl- parmout 1lst_dry.prmtop \n"
-CMD="$CMD trajout all_trajs_dry_imaged_10i.nc \n"
+CMD="$CMD trajout 200-600ns_dry_imaged_10i.nc \n"
 CMD="$CMD run \n"
 
 echo -e $CMD > cpp.in
