@@ -9,10 +9,10 @@ data_out = sys.argv[2]
 traj = md.load(traj_in, top="1lst_dry.prmtop")
 #traj = md.load(traj_in, top="1lst_nowat.prmtop")
 
-#all_molecules = traj.topology.find_molecules()
-#all_molecules.sort(key=lambda x: -len(x))
-#anchors2 = all_molecules[:2]
-#traj.image_molecules(anchor_molecules=anchors2)
+all_molecules = traj.topology.find_molecules()
+all_molecules.sort(key=lambda x: -len(x))
+anchors2 = all_molecules[:2]
+traj.image_molecules(anchor_molecules=anchors2)
 
 # define cu location
 cu1_idx = traj.topology.select("resid 238 and name Cu1")
