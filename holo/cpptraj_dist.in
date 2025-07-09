@@ -1,0 +1,7 @@
+parm fixed.1lst_nowat.prmtop
+trajin all_nowat_fixed.nc
+autoimage
+distance Cu1 :239@Cu1 :240@Cu1 out cu_dist.dat noimage
+go
+quit
+
