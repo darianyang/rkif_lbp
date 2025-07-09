@@ -1,0 +1,74 @@
+
+CPPTRAJ: Trajectory Analysis. V6.4.4 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 07/09/25 06:39:30
+| Available memory: 41.705 GB
+
+INPUT: Reading input from 'strip.cpp'
+  [parm 1lst_nowat.prmtop]
+	Reading '1lst_nowat.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+Warning: 1 molecules have non-contiguous segments of atoms.
+	       1        2 segments: 1-3611 (3611)  3637-3720 (84) 
+Warning: The 'fixatomorder' command can be used to reorder the topology and any
+Warning:  associated coordinates.
+  [trajin all_nowat_fixed.ncdf]
+	Reading 'all_nowat_fixed.ncdf' as Amber NetCDF
+  [strip :WAT,LIG,Na+,Cl- parmout 1lst_dry.prmtop]
+    STRIP: Stripping atoms in mask [:WAT,LIG,Na+,Cl-]
+	Writing 'stripped' topology file with name '1lst_dry.prmtop'
+  [trajout holo_dry_imaged.nc]
+	Writing 'holo_dry_imaged.nc' as Amber NetCDF
+  [run]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: 1lst_nowat.prmtop, 3724 atoms, 245 res, box: Truncated octahedron, 6 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'all_nowat_fixed.ncdf' is a NetCDF AMBER trajectory with coordinates, time, box, Parm 1lst_nowat.prmtop (Truncated octahedron box) (reading 100000 of 100000)
+  Coordinate processing will occur on 100000 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'holo_dry_imaged.nc' (100000 frames) is a NetCDF AMBER trajectory
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM '1lst_nowat.prmtop' (1 actions):
+  0: [strip :WAT,LIG,Na+,Cl- parmout 1lst_dry.prmtop]
+	Stripping 29 atoms.
+	Stripped topology: 3695 atoms, 240 res, box: Truncated octahedron, 1 mol
+	Writing topology 0 (1lst_nowat.prmtop) to '1lst_dry.prmtop' with format Amber Topology
+	Memory used by full exclusion list: 81.284 kB
+	Topology has alternative residue numbering (from e.g PDB, stripping, reordering, etc).
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  holo_dry_imaged.nc (coordinates, time, box)
+----- all_nowat_fixed.ncdf (1-100000, 1) -----
+ 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% Complete.
+
+Read 100000 frames and processed 100000 frames.
+TIME: Avg. throughput= 12503.1774 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.00%)
+TIME:		Trajectory Process : 7.9980 s ( 59.37%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.00%)
+TIME:		Other              : 5.4727 s (  0.41%)
+TIME:	Run Total 13.4706 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 13.5058 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
