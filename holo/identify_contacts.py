@@ -36,8 +36,8 @@ from key_interactions_finder import contact_identification
 # First calculation took 26 seconds to run on my laptop.
 contact_identification.calculate_contacts(
     parm_file="1lst_dry.prmtop",
-    traj_file="200-600ns_dry_imaged_10i.ncdf",
-    out_file="contacts.csv",
+    traj_file="holo_dry_imaged.ncdf",
+    out_file="holo_contacts.csv",
     report_timings=True,  # optional
 )
 
