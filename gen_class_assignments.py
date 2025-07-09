@@ -12,7 +12,7 @@ plt.style.use('/Users/wmd122/github/wedap/styles/default.mplstyle')
 class Gen_Class_Assignments:
 
     def __init__(self, c1_bounds=60, c2_bounds=35, c1_label="closed", c2_label="open",
-                 coord_data_file="200-600ns_pc.dat",
+                 coord_data_file="all_pc.dat",
                  out_filename="class_assignments.txt"):
         """
         Parameters
@@ -147,6 +147,6 @@ class Gen_Class_Assignments:
         plt.show()
 
 if __name__ == "__main__":
-    gen = Gen_Class_Assignments()
+    gen = Gen_Class_Assignments(coord_data_file="all_pc.dat")
     gen.gen_class_assignments()
     gen.state_assign_plot()
