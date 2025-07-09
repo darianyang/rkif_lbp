@@ -14,8 +14,12 @@ traj = md.load(traj_in, top="1lst_nowat.prmtop")
 #traj.image_molecules(anchor_molecules=anchors2)
 
 # define cu location
-cu1_idx = traj.topology.select("resid 238 and name Cu1")
-cu2_idx = traj.topology.select("resid 239 and name Cu1")
+#cu1_idx = traj.topology.select("resid 238 and name Cu1")
+#cu2_idx = traj.topology.select("resid 239 and name Cu1")
+cu1_idx = traj.topology.select("resid 239 and name Cu1")
+cu2_idx = traj.topology.select("resid 240 and name Cu1")
+
+print(cu1_idx, cu2_idx)
 
 copper_idx = np.array([cu1_idx, cu2_idx])
 
