@@ -79,15 +79,15 @@ class Gen_Class_Assignments:
         labels["label"] = "neither"
 
         # assign labels from element wise conditions
-        # labels[(self.coord1 < self.c1_bounds) & (self.coord2 < self.c2_bounds)] \
-        #     = self.c1_label
-        # labels[(self.coord1 > self.c1_bounds) & (self.coord2 > self.c2_bounds)] \
-        #     = self.c2_label
-
-        # the above excludes the sides of the dist, here lets do a full binary classification
-        labels["label"] = self.c2_label # all to open and then label closed only
         labels[(self.coord1 < self.c1_bounds) & (self.coord2 < self.c2_bounds)] \
             = self.c1_label
+        labels[(self.coord1 > self.c1_bounds) & (self.coord2 > self.c2_bounds)] \
+            = self.c2_label
+
+        # # the above excludes the sides of the dist, here lets do a full binary classification
+        # labels["label"] = self.c2_label # all to open and then label closed only
+        # labels[(self.coord1 < self.c1_bounds) & (self.coord2 < self.c2_bounds)] \
+        #     = self.c1_label
 
         # save the labeled class assignments structured array
         if save:
@@ -99,25 +99,26 @@ class Gen_Class_Assignments:
     def state_assign_plot(self):
         # make a plot of the class assignments
         # Map text labels to numerical values
-        #label_mapping = {self.c1_label: 0, 'neither': 1, self.c2_label: 2}
-        label_mapping = {self.c1_label: 0, self.c2_label: 2}
+        label_mapping = {self.c1_label: 0, 'neither': 1, self.c2_label: 2}
+        #label_mapping = {self.c1_label: 0, self.c2_label: 2}
         numerical_labels = np.array([label_mapping[label] for label in self.labels['label']])
 
         # Create a colormap
         # colors = ['#DEE11E', '#1EDEE1', '#E11EDE']
-        # colors = ['#1594EA', '#989C96', '#EA6B15']
+        #colors = ['#1594EA', '#989C96', '#EA6B15']
         # colors = ['#DEE11E', '#E11EDE']
         # colors = ['#1594EA', '#EA6B15']
-        colors = ['#1f77b4', '#ff7f0e']
+        #colors = ['#1f77b4', '#ff7f0e']
+        colors = ['#1f77b4', '#989C96', '#ff7f0e']
         cmap = ListedColormap(colors)
 
         # Scatter plot
-        plt.scatter(self.coord1, self.coord2, c=numerical_labels, cmap=cmap, s=3)
+        plt.scatter(self.coord1, self.coord2, c=numerical_labels, cmap=cmap, s=0.1, alpha=0.8)
 
         # Add colorbar
         cbar = plt.colorbar()
-        #cbar.set_ticks([0, 1, 2])  # Adjust ticks according to your labels
-        cbar.set_ticks([0.5, 1.5])  # Adjust ticks according to your labels
+        cbar.set_ticks([0, 1, 2])
+        #cbar.set_ticks([0.5, 1.5])
         cbar.set_ticklabels(list(label_mapping.keys()))
 
         # add state label lines
@@ -143,10 +144,10 @@ class Gen_Class_Assignments:
         #plt.title("CA-CTD State Labels")
 
         plt.tight_layout()
-        plt.savefig("state_labels.pdf")
+        plt.savefig("state_labels_withneither.pdf")
         plt.show()
 
 if __name__ == "__main__":
-    gen = Gen_Class_Assignments(coord_data_file="all_pc.dat")
+    gen = Gen_Class_Assignments(coord_data_file="all_pc.dat", out_filename="class_assignments_withneither.txt")
     gen.gen_class_assignments()
     gen.state_assign_plot()
