@@ -1,0 +1,33 @@
+# 1. Load the PDB file of your system in ChimeraX 
+# 2. Run this script by using the command: open /path/[FILE_NAME.cxc]
+# 3. Make sure the .cxc file is in the same directory as the pdb.
+# The lines below are suggestions for potentially nicer figures.
+# You can comment them in if you want.
+#set bgColor white
+#color gray target c
+#lighting soft
+#graphics silhouettes true
+shape sphere center :121@CA radius 1.5000 color red
+shape sphere center :59@CA radius 1.4256 color red
+shape sphere center :72@CA radius 1.4235 color red
+shape sphere center :55@CA radius 1.3814 color red
+shape sphere center :17@CA radius 1.3798 color red
+shape sphere center :163@CA radius 1.3122 color red
+shape sphere center :74@CA radius 1.2437 color red
+shape sphere center :10@CA radius 1.2374 color red
+shape sphere center :161@CA radius 1.1915 color red
+shape sphere center :64@CA radius 1.1688 color red
+shape sphere center :150@CA radius 1.1604 color red
+shape sphere center :93@CA radius 1.0813 color red
+shape sphere center :67@CA radius 1.0306 color red
+shape sphere center :30@CA radius 1.0292 color red
+shape sphere center :169@CA radius 1.0123 color red
+shape sphere center :200@CA radius 1.0116 color red
+shape sphere center :69@CA radius 0.9982 color red
+shape sphere center :14@CA radius 0.9970 color red
+shape sphere center :77@CA radius 0.9686 color red
+shape sphere center :184@CA radius 0.9437 color red
+shape sphere center :162@CA radius 0.9415 color red
+shape sphere center :188@CA radius 0.9302 color red
+shape sphere center :91@CA radius 0.9229 color red
+shape sphere center :176@CA radius 0.9006 color red
