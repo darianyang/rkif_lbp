@@ -1,10 +1,12 @@
-[I 2025-07-14 07:45:57.332 ServerApp] jupyter_lsp | extension was successfully linked.
-[I 2025-07-14 07:45:57.337 ServerApp] jupyter_server_terminals | extension was successfully linked.
-[I 2025-07-14 07:45:57.341 ServerApp] jupyterlab | extension was successfully linked.
-[W 2025-07-14 07:45:57.345 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2025-07-14 07:45:57.347 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
-[I 2025-07-14 07:45:57.347 ServerApp] notebook | extension was successfully linked.
-[W 2025-07-14 07:45:59.802 ServerApp] jupyter_http_over_ws | error adding extension (enabled: True): The module 'jupyter_http_over_ws' could not be found (No module named 'jupyter_http_over_ws'). Are you sure the extension is installed?
+[I 2025-08-08 10:16:26.876 ServerApp] Extension package jupyter_lsp took 0.7896s to import
+[I 2025-08-08 10:16:27.449 ServerApp] Extension package jupyter_server_terminals took 0.5634s to import
+[I 2025-08-08 10:16:30.666 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-08 10:16:30.670 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-08-08 10:16:30.675 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-08-08 10:16:30.767 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-08 10:16:30.769 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-08-08 10:16:30.769 ServerApp] notebook | extension was successfully linked.
+[W 2025-08-08 10:16:41.821 ServerApp] jupyter_http_over_ws | error adding extension (enabled: True): The module 'jupyter_http_over_ws' could not be found (No module named 'jupyter_http_over_ws'). Are you sure the extension is installed?
     Traceback (most recent call last):
       File "/ihome/lchong/dty7/Apps/anaconda3/envs/kif/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 358, in add_extension
         extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
@@ -14,75 +16,26 @@
       File "/ihome/lchong/dty7/Apps/anaconda3/envs/kif/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 227, in _load_metadata
         raise ExtensionModuleNotFound(msg) from None
     jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_http_over_ws' could not be found (No module named 'jupyter_http_over_ws'). Are you sure the extension is installed?
-[I 2025-07-14 07:45:59.814 ServerApp] notebook_shim | extension was successfully linked.
-[I 2025-07-14 07:45:59.944 ServerApp] notebook_shim | extension was successfully loaded.
-[I 2025-07-14 07:45:59.946 ServerApp] jupyter_lsp | extension was successfully loaded.
-[I 2025-07-14 07:45:59.947 ServerApp] jupyter_server_terminals | extension was successfully loaded.
-[I 2025-07-14 07:46:00.069 LabApp] JupyterLab extension loaded from /ihome/lchong/dty7/Apps/anaconda3/envs/kif/lib/python3.11/site-packages/jupyterlab
-[I 2025-07-14 07:46:00.069 LabApp] JupyterLab application directory is /ihome/lchong/dty7/Apps/anaconda3/envs/kif/share/jupyter/lab
-[I 2025-07-14 07:46:00.072 LabApp] Extension Manager is 'pypi'.
-[I 2025-07-14 07:46:00.321 ServerApp] jupyterlab | extension was successfully loaded.
-[I 2025-07-14 07:46:00.326 ServerApp] notebook | extension was successfully loaded.
-[I 2025-07-14 07:46:00.326 ServerApp] Serving notebooks from local directory: /ix/ssaxena/shared/ssaxena_dty7/rkif_lbp
-[I 2025-07-14 07:46:00.326 ServerApp] Jupyter Server 2.16.0 is running at:
-[I 2025-07-14 07:46:00.326 ServerApp] http://smp-1024-n1.crc.pitt.edu:8888/tree
-[I 2025-07-14 07:46:00.326 ServerApp]     http://127.0.0.1:8888/tree
-[I 2025-07-14 07:46:00.326 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[I 2025-07-14 07:46:00.412 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
-[I 2025-07-14 07:46:20.151 JupyterNotebookApp] 302 GET /tree (@10.201.0.24) 0.54ms
-[I 2025-07-14 07:46:26.815 ServerApp] User 5e1287cae49f4eaeb32c04c57b6bee3b logged in.
-[I 2025-07-14 07:46:26.816 ServerApp] 302 POST /login?next=%2Ftree (5e1287cae49f4eaeb32c04c57b6bee3b@10.201.0.24) 68.94ms
-[W 2025-07-14 07:47:29.585 ServerApp] Notebook rkif_lbp.ipynb is not trusted
-[W 2025-07-14 07:47:31.562 ServerApp] Notebook rkif_lbp.ipynb is not trusted
-[I 2025-07-14 07:47:32.644 ServerApp] Kernel started: fb6d4fc3-e782-4a76-901b-e2ad115a9344
-[I 2025-07-14 07:47:34.390 ServerApp] Connecting to kernel fb6d4fc3-e782-4a76-901b-e2ad115a9344.
-[I 2025-07-14 07:47:34.392 ServerApp] Connecting to kernel fb6d4fc3-e782-4a76-901b-e2ad115a9344.
-[W 2025-07-14 07:47:34.393 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+[I 2025-08-08 10:16:41.847 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-08-08 10:16:42.352 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-08 10:16:42.368 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-08 10:16:42.369 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-08 10:16:42.738 LabApp] JupyterLab extension loaded from /ihome/lchong/dty7/Apps/anaconda3/envs/kif/lib/python3.11/site-packages/jupyterlab
+[I 2025-08-08 10:16:42.738 LabApp] JupyterLab application directory is /ihome/lchong/dty7/Apps/anaconda3/envs/kif/share/jupyter/lab
+[I 2025-08-08 10:16:42.773 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-08 10:16:43.771 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-08 10:16:43.777 ServerApp] notebook | extension was successfully loaded.
+[I 2025-08-08 10:16:43.778 ServerApp] Serving notebooks from local directory: /ix/ssaxena/shared/ssaxena_dty7/rkif_lbp
+[I 2025-08-08 10:16:43.778 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-08-08 10:16:43.778 ServerApp] http://smp-1024-n1.crc.pitt.edu:8888/tree
+[I 2025-08-08 10:16:43.778 ServerApp]     http://127.0.0.1:8888/tree
+[I 2025-08-08 10:16:43.778 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-08 10:16:43.926 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-08 10:18:21.969 ServerApp] Kernel started: 955f6767-4055-465c-8191-38c75ed43bd4
+[I 2025-08-08 10:18:26.968 ServerApp] Connecting to kernel 955f6767-4055-465c-8191-38c75ed43bd4.
+[I 2025-08-08 10:18:26.970 ServerApp] Connecting to kernel 955f6767-4055-465c-8191-38c75ed43bd4.
+[W 2025-08-08 10:18:26.971 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
     Setting websocket_ping_timeout=30000
-[I 2025-07-14 07:47:34.621 ServerApp] Connecting to kernel fb6d4fc3-e782-4a76-901b-e2ad115a9344.
-[I 2025-07-14 07:47:36.942 ServerApp] Connecting to kernel fb6d4fc3-e782-4a76-901b-e2ad115a9344.
-[I 2025-07-14 07:47:45.402 ServerApp] Kernel started: 55c8d2da-daf8-4693-8bca-4d1956ca8598
-[I 2025-07-14 07:47:45.403 ServerApp] Kernel shutdown: fb6d4fc3-e782-4a76-901b-e2ad115a9344
-[I 2025-07-14 07:47:46.901 ServerApp] Connecting to kernel 55c8d2da-daf8-4693-8bca-4d1956ca8598.
-[I 2025-07-14 07:47:46.902 ServerApp] Connecting to kernel 55c8d2da-daf8-4693-8bca-4d1956ca8598.
-[I 2025-07-14 07:49:32.959 ServerApp] Saving file at /rkif_lbp.ipynb
-[W 2025-07-14 07:49:33.206 ServerApp] /ix/ssaxena/shared/ssaxena_dty7/rkif_lbp/.~rkif_lbp.ipynb doesn't exist
-[I 2025-07-14 07:55:35.275 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 07:57:36.772 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 07:59:39.392 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 08:01:41.773 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 08:03:43.131 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 08:05:44.335 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 08:07:45.247 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 08:09:45.934 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 08:13:47.082 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 08:14:40.606 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 08:16:41.276 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 08:26:46.992 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 08:56:39.964 ServerApp] Kernel interrupted: 55c8d2da-daf8-4693-8bca-4d1956ca8598
-[I 2025-07-14 08:56:55.855 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 08:58:56.283 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 09:00:56.835 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 09:01:52.260 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-14 09:34:48.853 ServerApp] Starting buffering for 55c8d2da-daf8-4693-8bca-4d1956ca8598:d27e175f-56d6-4be3-a9f8-8d990c2406d3
-[I 2025-07-14 09:34:49.169 ServerApp] Connecting to kernel 55c8d2da-daf8-4693-8bca-4d1956ca8598.
-[I 2025-07-14 09:34:49.394 ServerApp] Starting buffering for 55c8d2da-daf8-4693-8bca-4d1956ca8598:7c4aac02-6ea4-4e50-86dc-084d2d757508
-[I 2025-07-15 06:36:03.706 ServerApp] Connecting to kernel 55c8d2da-daf8-4693-8bca-4d1956ca8598.
-[I 2025-07-15 06:36:04.127 ServerApp] Starting buffering for 55c8d2da-daf8-4693-8bca-4d1956ca8598:6c9cb325-523e-4af7-ac05-2dc8a9260094
-[I 2025-07-15 06:36:10.291 ServerApp] Connecting to kernel 55c8d2da-daf8-4693-8bca-4d1956ca8598.
-[I 2025-07-15 06:36:10.654 ServerApp] Starting buffering for 55c8d2da-daf8-4693-8bca-4d1956ca8598:1725cd52-8d3b-4bbc-964c-01856d13378c
-[I 2025-07-15 06:36:10.880 ServerApp] Connecting to kernel 55c8d2da-daf8-4693-8bca-4d1956ca8598.
-[I 2025-07-15 06:37:51.149 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-15 06:49:55.362 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-15 06:51:55.793 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-15 06:53:22.716 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-15 06:53:27.218 ServerApp] Starting buffering for 55c8d2da-daf8-4693-8bca-4d1956ca8598:25dd2a29-f98c-438c-8422-e1dcfe13bb01
-[I 2025-07-15 07:01:27.687 ServerApp] Connecting to kernel 55c8d2da-daf8-4693-8bca-4d1956ca8598.
-[I 2025-07-15 07:01:28.072 ServerApp] Starting buffering for 55c8d2da-daf8-4693-8bca-4d1956ca8598:6830a4ee-6d2b-48de-a81d-972e312d1cd7
-[I 2025-07-15 07:01:31.807 ServerApp] Connecting to kernel 55c8d2da-daf8-4693-8bca-4d1956ca8598.
-[I 2025-07-15 07:01:32.491 ServerApp] Starting buffering for 55c8d2da-daf8-4693-8bca-4d1956ca8598:955a838b-8246-4d65-859e-63d414c0ea02
-[I 2025-07-15 07:01:32.703 ServerApp] Connecting to kernel 55c8d2da-daf8-4693-8bca-4d1956ca8598.
-[I 2025-07-15 07:03:32.501 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-15 07:05:33.360 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-15 07:11:58.497 ServerApp] Saving file at /rkif_lbp.ipynb
-[I 2025-07-15 07:15:13.635 ServerApp] Starting buffering for 55c8d2da-daf8-4693-8bca-4d1956ca8598:50d8da28-8577-4f06-a69c-9a046190528b
+[I 2025-08-08 10:18:27.191 ServerApp] Connecting to kernel 955f6767-4055-465c-8191-38c75ed43bd4.
+[I 2025-08-08 10:20:21.880 ServerApp] Saving file at /rkif_lbp.ipynb
+[I 2025-08-08 10:22:22.980 ServerApp] Saving file at /rkif_lbp.ipynb
